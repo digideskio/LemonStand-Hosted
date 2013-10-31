@@ -1,0 +1,5 @@
+Cardstream have either developed or assisted in the development of this module/Library enabling merchants 
+to process payments via our Payment Gateway.  Whilst every effort has been made to ensure this module/Library is secure, 
+tested and complete, we expect merchants undertaking the use of this module to test all their technical work fully 
+and satisfy their own standards. Cardstream is not responsible or liable for any merchant or Third Party using of 
+this module/Library.
