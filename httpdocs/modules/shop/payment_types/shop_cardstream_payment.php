@@ -96,7 +96,8 @@ class Shop_Cardstream_Payment extends Shop_PaymentType
         $fields['transactionUnique'] = $order->id;
         $fields['amount'] = str_replace(".", "", $amount);
 
-
+        $fields['merchantData'] = 'LemonStand-hosted-1';
+        
         $fields['redirectURL'] = root_url('/ls_cardstream_notification/' . $order->id . '?utm_nooverride=1&nocache' . uniqid(), true);
 
         ksort($fields);
