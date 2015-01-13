@@ -22,3 +22,8 @@ Cardstream payments from.
 
 Once you have filled out the “General Parameters” and “Countries” tabs, you
 will be left with the “Configuration” tab to complete.
+
+Compatibility
+=================
+
+Compatible with Version 1 of Lemoncart
