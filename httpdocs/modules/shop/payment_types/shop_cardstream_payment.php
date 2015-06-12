@@ -119,26 +119,9 @@ class Shop_Cardstream_Payment extends Shop_PaymentType
 
         try {
 
-            $qs = $_SERVER['QUERY_STRING'];
-            $qs = str_replace('&amp;', '&', $qs);
-            $qs = str_replace('?', '&', $qs);
-            $qsbits = explode('&', $qs);
-            unset($_GET);
-            foreach ($qsbits as $pair) {
-                $pairbits = explode('=', $pair);
-                $pairbits[0] = urldecode($pairbits[0]);
-                $pairbits[1] = urldecode($pairbits[1]);
-                $_REQUEST[$pairbits[0]] = $pairbits[1];
-                $_GET[$pairbits[0]] = $pairbits[1];
-                unset($_REQUEST['amp;' . $pairbits[0]]);
-            }
-
             /*
              * Find order and load payment method settings
              */
-
-
-
 
             $order_id = $_POST['transactionUnique'];
             if (!$order_id)
